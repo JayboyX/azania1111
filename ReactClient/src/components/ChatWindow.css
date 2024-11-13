@@ -1,0 +1,11 @@
+.chat-window {
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,58 @@
+.message-list {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.message-container.user {
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-container.user .message-content {
+    align-items: flex-end;
+}
+
+.message-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.message-container.user .message-bubble {
+    background-color: #4caf50;
+}
+
+.message-container.bot .message-bubble {
+    background-color: #3a3a3a;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 5px;
+    align-self: flex-end;
+}
